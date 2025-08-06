@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ececec6b;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.esquerda {
+    text-align: right;
+}
+.esquerda, .direita {
+    flex: 1 1 0;
+    margin: 5px;
+}
+
+.esquerda img {
+    width: 400px;
+    right: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    width: 400px;
+    padding: 30px;
+}
+.logo {
+    width: 100%;
+    text-align: center;
+    margin: 25px auto;
+}
+.login-container .logo img {
+    width: 210px;
+    text-align: center;
+}
+.form-container {
+    
+    border-bottom: 1px solid #bdbdbdbd;
+}
+
+.form-container form input[type="text"],
+.form-container form input[type="password"] {
+    display: block;
+    border: 1px solid #bdbdbdbd;
+    border-radius: 3px;
+    padding: 9px 7px;
+    margin: 5px auto;
+    width: 100%;
+}
+.form-container form input[type="submit"] {
+    display: block;
+    margin: 23px auto;
+    width: 100%;
+    padding: 7px 5px;
+    background-color: #3b5998;
+    border: 1px solid #bdbdbdbd;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+.separator {
+    position: relative;
+    text-align: center;
+}
+.separator #ou {
+    position: absolute;
+    top: -2px;
+    background-color: #fff;
+    padding: 5px 15px;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    color: #bdbdbd
+}
+
+.opcoes_senha {
+    text-align: center;
+    margin: 30px 0px 0;
+}
+.opcoes_senha a, .opcoes_senha p {
+    margin: 15px 0;
+    font-family: sans-serif;
+}
+.opcoes_senha p {
+    color: #3b5998;
+}
+.opcoes_senha a {
+    text-decoration: none;
+}
+.fa-facebook {
+    color: #3b5998;
+    padding-right: 25px;
+}
+.bottom-container {
+    margin: 10px 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.textos {
+    display: flex;
+    gap: 5px;
+}
+.textos a {
+    text-decoration: none;
+    color: #3474fd;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 832px) {
+    .esquerda {
+        display: none;
+    }
+    .login-container {
+        margin: 10px auto;
+        width: 350px;
+    }
+}
